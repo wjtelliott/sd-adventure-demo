@@ -1,0 +1,8 @@
+
+.profileImg
+{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+}
