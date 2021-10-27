@@ -1,4 +1,6 @@
 
+
+// All of our questions we will be asking the user
 const adventureQuestions = 
 [
     'Do you head left or right? (LEFT/RIGHT)',
@@ -18,6 +20,7 @@ const adventureQuestions =
     'You pick the flower and bring it home, and all marvel at its brilliance. However, over time it fades and eventually crumbles to dust.'
 ];
 
+// All of the valid answers to take from the user. Seperate each by a ';'
 const adventureValidAnswers =
 [
     'left;right',
@@ -37,6 +40,10 @@ const adventureValidAnswers =
     'END;END'
 ];
 
+
+// All of the valid 'Next Questions'. This will send the user to the index of adventureQuestions[]
+// Example: adventureQuestions[0]'s valid answer 'left' will send the user to adventureQuestions[1]
+// adventureQuestions[3]'s valid answer 'alert' will send the user to adventureQuestions[8]
 const adventureNextQuestion = 
 [
     '1;2',
@@ -62,6 +69,8 @@ function getInput(userPrompt)
     return window.prompt(userPrompt).toLowerCase();
 }
 
+// param: input => current input of the user
+// param: allowedInput[] => array of allowed inputs as lower case
 function validateInput(input, allowedInput)
 {
 
